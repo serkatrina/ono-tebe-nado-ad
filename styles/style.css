@@ -1,5 +1,4 @@
 /* ===== HEADER STYLES ===== */
-
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -20,10 +19,6 @@
   padding: 0;
 }
 
-.header__links-list-item {
-  padding-left: 0;
-}
-
 .header__links-list-item_no-bullit {
   list-style: none;
 }
@@ -34,11 +29,6 @@
 
 .header__link_active {
   text-decoration: none;
-}
-
-.body {
-  width: 100%;
-  overflow-x: hidden;
 }
 
 .header__logo {
@@ -56,6 +46,7 @@
   justify-self: end;
   font-style: normal;
   line-height: 1.35;
+  text-align: right;
 }
 
 .header__address a {
@@ -63,7 +54,6 @@
 }
 
 /* ===== COVER STYLES ===== */
-
 .cover {
   position: relative;
   padding: 165px 50px 50px;
@@ -142,7 +132,6 @@
 }
 
 /* ===== LOTS STYLES ===== */
-
 .lots {
   padding: 180px 50px;
 }
@@ -165,6 +154,7 @@
 .lots__card-list-item {
   flex: 1;
   min-height: 450px;
+  height: 450px;
 }
 
 .card-link {
@@ -221,17 +211,17 @@
 }
 
 /* ===== ABOUT STYLES ===== */
-
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  gap: 25px;
+  align-items: start;
   padding: 180px 50px;
 }
 
 .about__column:first-child {
   display: flex;
   justify-content: center;
+  padding-top: 35px;
 }
 
 .about__logo {
@@ -253,7 +243,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0;
+  margin: 0 0 100px 0;
 }
 
 .about__text {
@@ -261,8 +251,8 @@
   line-height: 1.2;
 }
 
-.about__text p:first-child {
-  margin-bottom: 25px;
+.about__text p {
+  margin: 0 0 25px 0;
 }
 
 .about__text p:last-child {
@@ -270,7 +260,6 @@
 }
 
 /* ===== FOOTER STYLES ===== */
-
 .footer {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
