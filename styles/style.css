@@ -36,6 +36,11 @@
   text-decoration: none;
 }
 
+.body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
 .header__logo {
   justify-self: center;
   width: 148px;
