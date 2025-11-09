@@ -1,4 +1,3 @@
-/* ===== HEADER STYLES ===== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -74,7 +73,7 @@
   font-size: 100px;
   font-weight: 700;
   line-height: 1.15;
-  letter-spacing: 30px;
+  letter-spacing: 0.3em;
   text-transform: uppercase;
   margin-bottom: 135px;
 }
@@ -89,15 +88,16 @@
 
 .aligned-text_center {
   text-align: center;
-  margin-left: 60px;
+  margin-right: 60px;
 }
 
 .aligned-text_right {
   text-align: right;
+  margin-right: 30px;
 }
 
 .letter-spacing-extended {
-  letter-spacing: 60px;
+  letter-spacing: 0.6em;
 }
 
 .no-letter-spacing {
@@ -152,8 +152,7 @@
 
 .lots__card-list-item {
   width: 430px;
-  height: 450px;
-  flex: none;
+  min-height: 450px;
 }
 
 .card-link {
@@ -167,8 +166,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 100%;
   height: 100%;
+  min-height: 450px;
   padding: 50px 40px;
   color: #FFF;
   background-size: cover;
@@ -213,8 +212,8 @@
 .about {
   display: grid;
   grid-template-columns: 430px 1fr;
-  align-items: start;
-  padding: 180px 50px 180px;
+  gap: 25px;
+  padding: 180px 50px;
 }
 
 .about__column:first-child {
@@ -223,13 +222,13 @@
 }
 
 .about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 240px;
   height: 240px;
   border-radius: 50%;
   background: #000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .about__logo-image {
@@ -241,7 +240,7 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0 100px;
+  margin: 100px 0 100px 0;
 }
 
 .about__text {
@@ -270,7 +269,6 @@
   justify-self: start;
   font-style: normal;
   line-height: 1.35;
-  text-align: left;
 }
 
 .footer__menu {
