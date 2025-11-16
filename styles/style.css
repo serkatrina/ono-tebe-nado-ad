@@ -1,3 +1,4 @@
+/* ===== HEADER STYLES ===== */
 .header {
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
@@ -44,12 +45,20 @@
 .header__address {
   justify-self: end;
   font-style: normal;
-  line-height: 1.35;
-  text-align: right;
+  line-height: 0;
+  text-align: left;
 }
 
 .header__address a {
   display: block;
+  margin-right: 80px;
+  line-height: 1.2;
+}
+
+.header__address p {
+  margin-top: 1px;
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 /* ===== COVER STYLES ===== */
@@ -83,21 +92,18 @@
 }
 
 .aligned-text:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .aligned-text_center {
   text-align: center;
-  margin-right: 60px;
+  margin-left: 40px;
 }
 
 .aligned-text_right {
   text-align: right;
-  margin-right: 30px;
-}
-
-.letter-spacing-extended {
-  letter-spacing: 0.6em;
+  margin-left: 624px;
+  margin-top: 66px;
 }
 
 .no-letter-spacing {
@@ -213,12 +219,13 @@
   display: grid;
   grid-template-columns: 430px 1fr;
   gap: 25px;
-  padding: 180px 50px;
+  padding: 10px 1px 180px 10px;
 }
 
 .about__column:first-child {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
+  padding-left: 40px;
 }
 
 .about__logo {
@@ -240,16 +247,16 @@
   font-size: 40px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 100px 0 100px 0;
+  margin: 100px 10px 100px 0px;
 }
 
 .about__text {
-  font-size: 20px;
+  font-size: 18px;
   line-height: 1.2;
 }
 
 .about__text p {
-  margin: 0 0 25px 0;
+  margin: 0 0px 25px 0;
 }
 
 .about__text p:last-child {
@@ -268,7 +275,18 @@
 .footer__address {
   justify-self: start;
   font-style: normal;
-  line-height: 1.35;
+  line-height: 1.2;
+}
+
+.footer__address a {
+  display: block;
+  line-height: 1.2;
+}
+
+.footer__address p {
+  margin-top: 5px;
+  text-decoration: none;
+  line-height: 1.2;
 }
 
 .footer__menu {
